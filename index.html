@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ATM Machine</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="display">
+            <p id="showMoney">atm machine</p>
+        </div>
+        <div class="number">
+            <input type="text" id="amount" placeholder="Enter Amount"> </br>
+            <button type="button" class="press" onclick="enterNumber(1)" >1</button>
+            <button type="button" class="press"  onclick="enterNumber(2)">2</button>
+            <button type="button" class="press"  onclick="enterNumber(3)" >3</button>
+            <button type="button" class="press"  onclick="enterNumber(4)">4</button>
+            <button type="button" class="press"  onclick="enterNumber(5)">5</button>
+            <button type="button" class="press"  onclick="enterNumber(6)">6</button>
+            <button type="button" class="press"  onclick="enterNumber(7)">7</button>
+            <button type="button" class="press"  onclick="enterNumber(8)">8</button>
+            <button type="button" class="press"  onclick="enterNumber(9)">9</button>
+            <button type="button" class="press" onclick="clearAllAmount() " >C</button>
+            <button type="button" class="press"  onclick="enterNumber(0)">0</button>
+            <button type="button" class="press" onclick="confirmTransaction() ">OK</button>
+        </div>
+        <div class="moneyCheck">
+            <button onclick="showBalance()">Balance</button>
+            <button onclick="enterAmount('deposit')">Deposit</button>
+            <button onclick="enterAmount('withdraw')">WithDraw</button>
+        </div>
+        </div> 
+
+
+    <script src="script.js"></script>
+</body>
+</html>
